@@ -21,7 +21,7 @@ const fabStyle = {
     right: '20px'
 };
 
-const databaseURL = "https://wordcloud-e11f9.firebaseio.com";
+const databaseURL = "https://word-cloud-21f19.firebaseio.com/";
   
 class Texts extends React.Component {
 
