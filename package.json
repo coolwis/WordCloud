@@ -6,22 +6,22 @@
   "dependencies": {
     "@material-ui/core": "^3.8.2",
     "material-ui": "^0.20.2",
-    "react": "^16.7.0",
-    "react-dom": "^16.7.0",
-    "react-router-dom": "^4.3.1",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-router-dom": "^5.2.0",
     "react-text-truncate": "^0.13.1"
   },
   "scripts": {
-    "start": "NODE_ENV=development webpack-dev-server",
-    "build": "NODE_ENV=production webpack -p"
+    "start": "set NODE_ENV=development&&webpack-dev-server",
+    "build": "set NODE_ENV=production&&webpack -p"
   },
   "devDependencies": {
     "babel-core": "^6.26.3",
-    "babel-loader": "^8.0.5",
-    "babel-preset-react-app": "^7.0.0",
-    "copy-webpack-plugin": "^4.6.0",
-    "webpack": "^4.28.1",
-    "webpack-cli": "^3.2.1",
-    "webpack-dev-server": "^3.1.14"
+    "babel-loader": "^8.1.0",
+    "babel-preset-react-app": "^9.1.2",
+    "copy-webpack-plugin": "^6.0.2",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.11.0"
   }
 }
