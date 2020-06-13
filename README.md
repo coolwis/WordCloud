@@ -32,7 +32,7 @@ yarn start
 ```
 * 프로젝트 정상 동작 확인 이후에는 파이어베이스에 배포합니다.
 ```
-yarn add --dev copy-webpack-plugin
+yarn add --dev copy-webpack-plugin  #최신버전으로 설치시 패턴규칙에 의해 에러 날 수 있음
 yarn add webpack-cli
 npm install -g firebase-tools
 firebase init
@@ -40,3 +40,6 @@ firebase init
 yarn build
 firebase deploy
 ```
+
+# 추가 라이브러리 
+yarn add react-text-truncate

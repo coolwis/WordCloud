@@ -4,7 +4,7 @@ import '../index.css';
 import ActionUpdateIcon from 'material-ui/svg-icons/action/update';
 import { FloatingActionButton, Dialog, FlatButton, TextField } from 'material-ui';
 
-const databaseURL = "https://wordcloud-e11f9.firebaseio.com";
+const databaseURL =  "https://word-cloud-21f19.firebaseio.com/";
 const apiURL = "https://wordcloudpython.tk";
 
 const fabStyle = {
@@ -25,11 +25,14 @@ class Detail extends React.Component {
         }
     }
     componentDidMount() {
-        this._getImage();
+        // this._getImage();
         this._getText();
-        this._getWords();
+        // this._getWords();
     }
     _getText() {
+
+        console.log(">>>> params:" + this.props.match.params.textID);
+
         fetch(`${databaseURL}/texts/${this.props.match.params.textID}.json`).then(res => {
             if(res.status != 200) {
                 throw new Error(res.statusText);
